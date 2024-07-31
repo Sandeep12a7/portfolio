@@ -1,0 +1,81 @@
+.about-section {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f2f3f4, #d4ecf8);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.about-content p {
+  color: #444;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0;
+}
+
+.bio,
+.skills,
+.projects,
+.goals,
+.hobbies {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.bio:hover,
+.skills:hover,
+.projects:hover,
+.goals:hover,
+.hobbies:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0 10px;
+  }
+
+  .section-title {
+    font-size: 2.2em;
+  }
+
+  .about-content h2 {
+    font-size: 1.6em;
+  }
+
+  .bio,
+  .skills,
+  .projects,
+  .goals,
+  .hobbies {
+    padding: 15px;
+  }
+}
